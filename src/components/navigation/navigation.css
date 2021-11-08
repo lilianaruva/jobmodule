@@ -7,16 +7,21 @@
     background: white;
     box-shadow: 2px 2px 50px rgb(204, 204, 204);
     overflow: scroll;
+    overflow-x: hidden;
     transform: translateX(-100%);
     transition: all 0.5s ease;
     opacity: 0;
+    border-radius: 0 40px 40px 0;
 }
 
 .library h2{
     padding: 2rem;
+    color: #16325C;
+    font-size: 14px;
 }
 
-.library-song {
+.library-items{
+    height: 40px;
     background: white;
     display: flex;
     align-items: center;
@@ -25,12 +30,12 @@
     transition: background 0.5s ease;
 }
 
-.library-song img {
+.library-items img {
     width: 30%;
 }
-.library-song img:hover{
-    background: rgba(244, 179, 255, 0.5);
-    transform: translateX(10%);
+.library-items:hover{
+    background: #F5FAFF;
+    transform: translateX(5%);
     transition: 0.5s ease;
     box-shadow: 1px 1px 20px rgb(204, 204, 204);
 }
