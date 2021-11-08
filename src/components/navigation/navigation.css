@@ -10,11 +10,29 @@
     transform: translateX(-100%);
     transition: all 0.5s ease;
     opacity: 0;
-
 }
 
 .library h2{
     padding: 2rem;
+}
+
+.library-song {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+
+.library-song img {
+    width: 30%;
+}
+.library-song img:hover{
+    background: rgba(244, 179, 255, 0.5);
+    transform: translateX(10%);
+    transition: 0.5s ease;
+    box-shadow: 1px 1px 20px rgb(204, 204, 204);
 }
 
 .selected{
@@ -29,4 +47,21 @@
     .library{
         width: 100%;
     }
+}
+
+*{
+    scrollbar-width: thin;
+    scrollbar-color: rgba(155,155,155,0.5) transparent;
+}
+
+*::-webkit-scrollbar{
+    width: 5px;
+}
+*::-webkit-scrollbar-track{
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: rgba(155,155,155,0.5);
+    border-radius: 20px;
+    border: transparent;
 }
