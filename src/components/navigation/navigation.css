@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 20rem;
+    width: 17rem;
     height: 100%;
     background: white;
     box-shadow: 2px 2px 50px rgb(204, 204, 204);
@@ -14,13 +14,13 @@
     border-radius: 0 40px 40px 0;
 }
 
-.library h2{
-    padding: 2rem;
+.library h2 {
+    padding: 1rem;
     color: #16325C;
     font-size: 14px;
 }
 
-.library-items{
+.library-items {
     height: 40px;
     background: white;
     display: flex;
@@ -33,40 +33,64 @@
 .library-items img {
     width: 30%;
 }
-.library-items:hover{
+
+.library-items:hover {
     background: #F5FAFF;
     transform: translateX(5%);
     transition: 0.5s ease;
     box-shadow: 1px 1px 20px rgb(204, 204, 204);
 }
 
-.selected{
-    background:rgba(244, 179, 255, 0.9);
+.selected {
+    background: rgba(244, 179, 255, 0.9);
 }
-.active-library{
+
+.active-library {
     transform: translateX(0%);
     opacity: 1;
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 86px;
+    height: 86px;
+    border-radius: 20px;
+    margin: 1em 0 1em 1em;
+}
+
+.space-items {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 @media screen and (max-width:768px) {
-    .library{
+    .library {
         width: 100%;
     }
 }
 
-*{
+* {
     scrollbar-width: thin;
-    scrollbar-color: rgba(155,155,155,0.5) transparent;
+    scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
 }
 
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
     width: 5px;
 }
-*::-webkit-scrollbar-track{
+
+*::-webkit-scrollbar-track {
     background: transparent;
 }
-*::-webkit-scrollbar-thumb{
-    background-color: rgba(155,155,155,0.5);
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.5);
     border-radius: 20px;
     border: transparent;
 }
