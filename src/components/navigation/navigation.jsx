@@ -12,6 +12,7 @@ const Navigation = () => {
             <div className="profile">
                 <User photo={profile} name="Juan Carlos Gallegos Ruvalcaba" />
             </div>
+            <hr></hr>
             <div className="space-items">
             {menu.map((item) => (
                 <div className="library-items">

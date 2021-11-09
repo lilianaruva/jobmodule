@@ -20,6 +20,13 @@
     font-size: 14px;
 }
 
+.library hr{
+    width: 80%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #EBF0F5;
+}
+
 .library-items {
     height: 40px;
     background: white;
